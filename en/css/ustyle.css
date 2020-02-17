@@ -1,0 +1,829 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'CHULALONGKORN';
+  src: url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.eot");
+  src: url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.woff2") format("woff2"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.woff") format("woff"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.ttf") format("truetype"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Bold.svg#CHULALONGKORN-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CHULALONGKORN';
+  src: url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.eot");
+  src: url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.woff2") format("woff2"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.woff") format("woff"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.ttf") format("truetype"), url("../fonts/CHULALONGKORN/CHULALONGKORN-Regular.svg#CHULALONGKORN-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../fonts/Avenir/Avenir-BookOblique.eot");
+  src: url("../fonts/Avenir/Avenir-BookOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-BookOblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-BookOblique.woff") format("woff"), url("../fonts/Avenir/Avenir-BookOblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-BookOblique.svg#Avenir-BookOblique") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Black.eot");
+  src: url("../fonts/Avenir/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Black.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Black.woff") format("woff"), url("../fonts/Avenir/Avenir-Black.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Black.svg#Avenir-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../fonts/Avenir/Avenir-Book.eot");
+  src: url("../fonts/Avenir/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Book.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Book.woff") format("woff"), url("../fonts/Avenir/Avenir-Book.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Book.svg#Avenir-Book") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Roman.eot");
+  src: url("../fonts/Avenir/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Roman.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Roman.woff") format("woff"), url("../fonts/Avenir/Avenir-Roman.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Roman.svg#Avenir-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Medium.eot");
+  src: url("../fonts/Avenir/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Medium.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Medium.woff") format("woff"), url("../fonts/Avenir/Avenir-Medium.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Medium.svg#Avenir-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-MediumOblique.eot");
+  src: url("../fonts/Avenir/Avenir-MediumOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-MediumOblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-MediumOblique.woff") format("woff"), url("../fonts/Avenir/Avenir-MediumOblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-MediumOblique.svg#Avenir-MediumOblique") format("svg");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Heavy.eot");
+  src: url("../fonts/Avenir/Avenir-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Heavy.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Heavy.woff") format("woff"), url("../fonts/Avenir/Avenir-Heavy.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Heavy.svg#Avenir-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Black Oblique';
+  src: url("../fonts/Avenir/Avenir-BlackOblique.eot");
+  src: url("../fonts/Avenir/Avenir-BlackOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-BlackOblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-BlackOblique.woff") format("woff"), url("../fonts/Avenir/Avenir-BlackOblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-BlackOblique.svg#Avenir-BlackOblique") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-LightOblique.eot");
+  src: url("../fonts/Avenir/Avenir-LightOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-LightOblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-LightOblique.woff") format("woff"), url("../fonts/Avenir/Avenir-LightOblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-LightOblique.svg#Avenir-LightOblique") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Light.eot");
+  src: url("../fonts/Avenir/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Light.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Light.woff") format("woff"), url("../fonts/Avenir/Avenir-Light.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Light.svg#Avenir-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-HeavyOblique.eot");
+  src: url("../fonts/Avenir/Avenir-HeavyOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-HeavyOblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-HeavyOblique.woff") format("woff"), url("../fonts/Avenir/Avenir-HeavyOblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-HeavyOblique.svg#Avenir-HeavyOblique") format("svg");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../fonts/Avenir/Avenir-Oblique.eot");
+  src: url("../fonts/Avenir/Avenir-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/Avenir/Avenir-Oblique.woff2") format("woff2"), url("../fonts/Avenir/Avenir-Oblique.woff") format("woff"), url("../fonts/Avenir/Avenir-Oblique.ttf") format("truetype"), url("../fonts/Avenir/Avenir-Oblique.svg#Avenir-Oblique") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+/*
+เขียวBG #367916
+ชมพูขอบลู่ #863045
+ชมพูลู่ #f38ea2
+ชมพูเงา #d4145a
+เทาปุ่มโหวต #e6e6e
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: Avenir;
+  background: #397A3A;
+  background: linear-gradient(323deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 16.667%, rgba(46, 46, 46, 0.01) 16.667%, rgba(46, 46, 46, 0.01) 33.334%, rgba(226, 226, 226, 0.01) 33.334%, rgba(226, 226, 226, 0.01) 50.001%, rgba(159, 159, 159, 0.01) 50.001%, rgba(159, 159, 159, 0.01) 66.668%, rgba(149, 149, 149, 0.01) 66.668%, rgba(149, 149, 149, 0.01) 83.335%, rgba(43, 43, 43, 0.01) 83.335%, rgba(43, 43, 43, 0.01) 100.002%), linear-gradient(346deg, rgba(166, 166, 166, 0.03) 0%, rgba(166, 166, 166, 0.03) 25%, rgba(240, 240, 240, 0.03) 25%, rgba(240, 240, 240, 0.03) 50%, rgba(121, 121, 121, 0.03) 50%, rgba(121, 121, 121, 0.03) 75%, rgba(40, 40, 40, 0.03) 75%, rgba(40, 40, 40, 0.03) 100%), linear-gradient(347deg, rgba(209, 209, 209, 0.01) 0%, rgba(209, 209, 209, 0.01) 25%, rgba(22, 22, 22, 0.01) 25%, rgba(22, 22, 22, 0.01) 50%, rgba(125, 125, 125, 0.01) 50%, rgba(125, 125, 125, 0.01) 75%, rgba(205, 205, 205, 0.01) 75%, rgba(205, 205, 205, 0.01) 100%), linear-gradient(84deg, rgba(195, 195, 195, 0.01) 0%, rgba(195, 195, 195, 0.01) 14.286%, rgba(64, 64, 64, 0.01) 14.286%, rgba(64, 64, 64, 0.01) 28.572%, rgba(67, 67, 67, 0.01) 28.572%, rgba(67, 67, 67, 0.01) 42.858%, rgba(214, 214, 214, 0.01) 42.858%, rgba(214, 214, 214, 0.01) 57.144%, rgba(45, 45, 45, 0.01) 57.144%, rgba(45, 45, 45, 0.01) 71.43%, rgba(47, 47, 47, 0.01) 71.43%, rgba(47, 47, 47, 0.01) 85.716%, rgba(172, 172, 172, 0.01) 85.716%, rgba(172, 172, 172, 0.01) 100.002%), linear-gradient(73deg, rgba(111, 111, 111, 0.03) 0%, rgba(111, 111, 111, 0.03) 16.667%, rgba(202, 202, 202, 0.03) 16.667%, rgba(202, 202, 202, 0.03) 33.334%, rgba(57, 57, 57, 0.03) 33.334%, rgba(57, 57, 57, 0.03) 50.001%, rgba(197, 197, 197, 0.03) 50.001%, rgba(197, 197, 197, 0.03) 66.668%, rgba(97, 97, 97, 0.03) 66.668%, rgba(97, 97, 97, 0.03) 83.335%, rgba(56, 56, 56, 0.03) 83.335%, rgba(56, 56, 56, 0.03) 100.002%), linear-gradient(132deg, rgba(88, 88, 88, 0.03) 0%, rgba(88, 88, 88, 0.03) 20%, rgba(249, 249, 249, 0.03) 20%, rgba(249, 249, 249, 0.03) 40%, rgba(2, 2, 2, 0.03) 40%, rgba(2, 2, 2, 0.03) 60%, rgba(185, 185, 185, 0.03) 60%, rgba(185, 185, 185, 0.03) 80%, rgba(196, 196, 196, 0.03) 80%, rgba(196, 196, 196, 0.03) 100%), linear-gradient(142deg, rgba(160, 160, 160, 0.03) 0%, rgba(160, 160, 160, 0.03) 12.5%, rgba(204, 204, 204, 0.03) 12.5%, rgba(204, 204, 204, 0.03) 25%, rgba(108, 108, 108, 0.03) 25%, rgba(108, 108, 108, 0.03) 37.5%, rgba(191, 191, 191, 0.03) 37.5%, rgba(191, 191, 191, 0.03) 50%, rgba(231, 231, 231, 0.03) 50%, rgba(231, 231, 231, 0.03) 62.5%, rgba(70, 70, 70, 0.03) 62.5%, rgba(70, 70, 70, 0.03) 75%, rgba(166, 166, 166, 0.03) 75%, rgba(166, 166, 166, 0.03) 87.5%, rgba(199, 199, 199, 0.03) 87.5%, rgba(199, 199, 199, 0.03) 100%), linear-gradient(238deg, rgba(116, 116, 116, 0.02) 0%, rgba(116, 116, 116, 0.02) 20%, rgba(141, 141, 141, 0.02) 20%, rgba(141, 141, 141, 0.02) 40%, rgba(152, 152, 152, 0.02) 40%, rgba(152, 152, 152, 0.02) 60%, rgba(61, 61, 61, 0.02) 60%, rgba(61, 61, 61, 0.02) 80%, rgba(139, 139, 139, 0.02) 80%, rgba(139, 139, 139, 0.02) 100%), linear-gradient(188deg, rgba(227, 227, 227, 0.01) 0%, rgba(227, 227, 227, 0.01) 20%, rgba(105, 105, 105, 0.01) 20%, rgba(105, 105, 105, 0.01) 40%, rgba(72, 72, 72, 0.01) 40%, rgba(72, 72, 72, 0.01) 60%, rgba(33, 33, 33, 0.01) 60%, rgba(33, 33, 33, 0.01) 80%, rgba(57, 57, 57, 0.01) 80%, rgba(57, 57, 57, 0.01) 100%), linear-gradient(90deg, #212121, #212121);
+}
+
+body:lang(th) {
+  font-family: Avenir;
+}
+
+body:lang(en) {
+  font-family: Avenir;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1.25em;
+  background-color: #fefefe;
+  border-radius: 0.5em;
+  width: 70%;
+  min-height: 30vh;
+}
+
+.modal .modal-head {
+  font-size: 1.8em;
+  margin-top: 0.3em;
+}
+
+.modal .modal-content {
+  font-size: 1em;
+  text-align: center;
+}
+
+.modal .modal-button {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 1em;
+  position: relative;
+  cursor: pointer;
+  margin-top: 1.5em;
+  background: #D4145A;
+  padding: 0em 1em;
+}
+
+.modal hr {
+  display: block;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 0.1em solid #D4145A;
+  border-color: #D4145A;
+  border-style: inset;
+  width: 80%;
+}
+
+.homepage {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em;
+}
+
+.homepage .heading {
+  font-size: 4em;
+  margin-top: 1em;
+}
+
+.homepage .line-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.homepage .line-container .line {
+  width: 36vw;
+  height: 0.2em;
+  background: white;
+}
+
+.homepage .line-container .heading-line {
+  margin: 1em 0.5em;
+  width: auto;
+  font-size: 1.5em;
+  font-family: Avenir;
+}
+
+.homepage .sub-heading {
+  font-size: 2em;
+}
+
+.homepage .content-container {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.homepage .content-container .content {
+  font-size: 1em;
+  margin: 0.1em;
+}
+
+.homepage .logo-container {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 20vw;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.homepage .logo-container .logo1,
+.homepage .logo-container .logo2 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20vw;
+  height: 20vw;
+}
+
+.homepage .logo-container .logo1 {
+  background-image: url(../images/elements/sgcu_white.png);
+}
+
+.homepage .logo-container .logo2 {
+  background-image: url(../images/elements/chula_white.png);
+}
+
+.termspage {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+}
+
+.termspage .heading {
+  font-size: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 0;
+  margin-bottom: 0.5em;
+}
+
+.termspage .condition-container {
+  width: 100%;
+}
+
+.termspage .condition-container .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.termspage .condition-container .item .number {
+  font-size: 0.7em;
+  margin-right: 0.3em;
+}
+
+.termspage .condition-container .item .content {
+  font-size: 0.7em;
+}
+
+.termspage .button-container {
+  margin-top: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.votepage {
+  color: white;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 1em;
+}
+
+.votepage .heading {
+  font-size: 2em;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.votepage .sub-heading {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.votepage .line-container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.votepage .line-container .line {
+  width: 15vw;
+  height: 0.2em;
+  background: white;
+}
+
+.votepage .line-container .heading-line {
+  margin: 0.1em 0.5em;
+  width: auto;
+  font-size: 1em;
+  font-family: Avenir;
+}
+
+.votepage .content-container {
+  text-align: center;
+  line-height: 1em;
+}
+
+.votepage .content-container .content {
+  font-size: 0.5em;
+}
+
+.votepage .command {
+  font-size: 0.8em;
+  margin: 0.9em 0 -1.2em 0;
+}
+
+.confirmpage {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 1em;
+}
+
+.confirmpage .heading {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.confirmpage .button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+}
+
+.confirmpage hr {
+  border-top: 0.1em solid #D4145A;
+  margin-bottom: 1em;
+}
+
+.finishpage {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.finishpage .heading-container {
+  margin-top: 1em;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.finishpage .heading-container .heading {
+  font-size: 2em;
+}
+
+.finishpage .heading-container .sub-heading {
+  font-size: 1.1em;
+}
+
+.finishpage .sub-container {
+  margin-top: 6em;
+}
+
+.finishpage .sub-container .content {
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.finishpage .sub-container .facebook-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1em;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.finishpage .sub-container .facebook-container .facebook {
+  background: url(../images/elements/fb_icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5em;
+}
+
+.finishpage .sub-container .facebook-container .content {
+  font-size: 1em;
+  height: 100%;
+}
+
+.previewpage {
+  color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.2em;
+}
+
+.previewpage .heading {
+  font-size: 1.5em;
+  margin-top: 0.5em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: bold;
+}
+
+.previewpage hr {
+  width: 90%;
+  color: #D4145A;
+  border-top: 0.1em solid #D4145A;
+}
+
+.previewpage .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.previewpage .preview-container {
+  max-width: 7.5em;
+  margin: 0.35em;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5em;
+  justify-self: center;
+  -webkit-box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.1), 0 0.3em 1em 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.1), 0 0.3em 1em 0 rgba(0, 0, 0, 0.09);
+}
+
+.previewpage .preview-container .preview {
+  width: 100%;
+  height: 90%;
+  width: 6.5em;
+  height: 6.5em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.previewpage .preview-container .topic {
+  color: white;
+  text-align: center;
+  padding: 0.4em 0;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  line-height: 1em;
+  font-weight: bold;
+  width: 100%;
+  background: #D4145A;
+}
+
+.previewpage .detail-container {
+  margin-top: 1.4em;
+  width: 85%;
+}
+
+.previewpage .detail-container .heading {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.previewpage .detail-container .content {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.previewpage .button-container {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 1em;
+}
+
+.track-container {
+  width: 100vw;
+  height: 60vh;
+  z-index: -1;
+  overflow: hidden;
+  margin-top: -60vh;
+}
+
+.track-container .track {
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: url(../images/elements/track-small.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+hr {
+  display: block;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 0.1em solid black;
+  border-style: inset;
+  width: 80%;
+}
+
+.wrapper {
+  font-size: 1em;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin-top: 0.8em;
+  max-width: 50vw;
+}
+
+.button {
+  font-size: 1em;
+  width: 100%;
+  border-radius: 0.2em;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: auto;
+  background: #D4145A;
+  margin-bottom: auto;
+  padding: 0.2em 1.2em;
+}
+
+.button > p {
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.button:hover p {
+  font-size: 1em;
+  color: white;
+}
+
+.button.button-wide:before {
+  top: 0%;
+  left: -100%;
+}
+
+.button.button-wide:hover:before {
+  left: 0;
+}
+
+.round {
+  font-size: 0.8em;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+}
+
+.round label {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0.05em solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.round label:after {
+  border: 0.1em solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 0.3em;
+  left: 0.35em;
+  opacity: 0;
+  position: absolute;
+  top: 0.4em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 0.6em;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+  z-index: 100;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.text-shadow {
+  text-shadow: -0.05em 0.05em #D4145A;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 40px;
+  }
+}
+/*# sourceMappingURL=ustyle.css.map */

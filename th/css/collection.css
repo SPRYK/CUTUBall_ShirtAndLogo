@@ -1,0 +1,54 @@
+.Front1 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern1/front.png");
+}
+.Front2 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern2/front.png");
+}
+.Front3 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern3/front.png");
+}
+.Back1 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern1/back.png");
+}
+.Back2 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern2/back.png");
+}
+.Back3 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern3/back.png");
+}
+.CLogo1 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern1/logo.png");
+}
+.CLogo2 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern2/logo.png");
+}
+.CLogo3 {
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   background: url("../images/pattern3/logo.png");
+}

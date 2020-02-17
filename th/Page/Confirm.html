@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CU TU BALL</title>
+    <link rel="stylesheet" href="../css/ustyle.css">
+    <link rel="stylesheet" href="../css/collection.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-body">
+            <h2 class="modal-head" lang="en">Alert !</h2>
+            <hr>
+            <p class="modal-content" id="content" lang="th">Some text in the Modal..</p>
+            <div class="modal-button" id="modal-button" lang="en">OK</div>
+        </div>
+    </div>
+
+    <div class="confirmpage">
+        <p class="heading" id="heading" lang="en">YOU CHOOSE PATTERN</p>
+        <hr>
+        <div class="selector" id="selector">
+            <!-- Front -->
+            <div class="container" style="padding: 0.5em">
+                <div class="contestant picture" id="front"></div>
+                <p class="name bold" lang="th" style="align-self: center">ด้านหน้า</p>
+            </div>
+            <!-- Back -->
+            <div class="container" style="padding: 0.5em">
+                <div class="contestant picture" id="back"></div>
+                <p class="name bold" lang="th" style="align-self: center">ด้านหลัง</p>
+            </div>
+            <!-- Logo -->
+            <div class="container" style="padding: 0.5em">
+                <div class="contestant picture" id="logo"></div>
+                <p class="name bold" lang="th" style="align-self: center">โลโก้</p>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <div class="wrapper">
+                <div class="button button-wide submit" onclick="goBack()">
+                    <p class="button-content" lang="en">Back</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="button button-wide" id="button" onclick="ConfirmVote('Finish.html',1)">
+                    <p class="button-content" lang="en">Confirm</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/vote.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <script>
+        ConfirmStart();
+    </script>
+
+</body>
+
+</html>

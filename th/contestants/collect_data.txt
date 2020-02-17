@@ -1,0 +1,42 @@
+contestants = {
+    'th' : {
+        #contestant number 1
+        1 : {
+            "number" : "01",
+            "concept" : "concept 1",
+            "name" : "designer name 1",
+        },
+        #contestant number 2
+        2 : {
+            "number" : "02",
+            "concept" : "concept 2",
+            "name" : "designer name 2",
+        },
+        #contestant number 3
+        3 : {
+            "number" : "03",
+            "concept" : "concept 3",
+            "name" : "designer name 3",
+        },
+    },
+    'en' : {
+        #contestant number 1
+        1 : {
+            "number" : "05",
+            "concept" : "concept 5",
+            "name" : "designer name 5",
+        },
+        #contestant number 2
+        2 : {
+            "number" : "06",
+            "concept" : "concept 6",
+            "name" : "designer name 6",
+        },
+        #contestant number 3
+        3 : {
+            "number" : "number(en)",
+            "concept" : "concept(en)",
+            "name" : "name(en)",
+        },
+    },
+}

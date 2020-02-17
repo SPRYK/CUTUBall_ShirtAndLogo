@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CU TU BALL</title>
+    <link rel="stylesheet" href="../css/ustyle.css">
+    <link rel="stylesheet" href="../css/collection.css">
+    <link rel="stylesheet" href="../css/grid.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/mustache.js"></script>
+    <link rel="shortcut icon" href="#" />
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-body">
+            <h2 class="modal-head" lang="en">Alert !</h2>
+            <hr>
+            <p class="modal-content" id="content" lang="th">Some text in the Modal..</p>
+            <div class="modal-button" id="modal-button" lang="en">OK</div>
+        </div>
+    </div>
+
+    <div class="votepage">
+        <p class="heading text-shadow" lang="en">LOGO</p>
+        <div class="line-container">
+            <div class="line"></div>
+            <p class="heading-line text-shadow" lang="en">&</p>
+            <div class="line"></div>
+        </div>
+
+        <p class="sub-heading text-shadow" lang="en">CHEER SHIRT</p>
+        <div class="content-container">
+            <p class="content" lang="en">DESIGN COMPETITION</p>
+            <p class="content" lang="en">CUTUBALL74</p>
+        </div>
+        <p class="command text-shadow">CHOOSE YOUR BEST DESIGN</p>
+
+        <hr>
+
+        <div class="selector" id="selector">
+            <!-- Begin of contestant list -->
+            <div class="container">
+                <div class="select_button">
+                    <div class="round">
+                        <input class="checkbox" type="checkbox" id="S1" value="S1" />
+                        <label id="LS1" for="S1"></label>
+                    </div>
+                </div>
+                <div class="contestant picture CLogo1"></div>
+                <a onclick='gotoPage("../contestants/S1.html",CheckSubmit())'>
+                    <p lang="th">รายละเอียด</p>
+                </a>
+                <p id="PS1" class="name" lang="th">รูปแบบที่ 1</p>
+            </div>
+            <!-- PATERN 2 -->
+            <div class="container">
+                <div class="select_button">
+                    <div class="round">
+                        <input class="checkbox" type="checkbox" id="S2" value="S2" />
+                        <label id="LS2" for="S2"></label>
+                    </div>
+                </div>
+                <div class="contestant picture CLogo2"></div>
+                <a onclick='gotoPage("../contestants/S2.html",CheckSubmit())'>
+                    <p lang="th">รายละเอียด</p>
+                </a>
+                <p id="PS2" class="name" lang="th">รูปแบบที่ 2</p>
+            </div>
+            <!-- PATERN 3 -->
+            <div class="container">
+                <div class="select_button">
+                    <div class="round">
+                        <input class="checkbox" type="checkbox" id="S3" value="S3" />
+                        <label id="LS3" for="S3"></label>
+                    </div>
+                </div>
+                <div class="contestant picture CLogo3"></div>
+                <a onclick='gotoPage("../contestants/S3.html",CheckSubmit())'>
+                    <p lang="th">รายละเอียด</p>
+                </a>
+                <p id="PS3" class="name" lang="th">รูปแบบที่ 3</p>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="button button-wide" id="button" onclick='checkSelected("Confirm.html",1)'>
+                <p class="button-content" lang="en">Next</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../js/custom.js"></script>
+    <script type="text/javascript" src="../js/vote.js"></script>
+    <script type="text/javascript" src="../js/modal.js"></script>
+    <script>
+        var $checks = $('input[type="checkbox"]').click(function(e) {
+            var numChecked = $checks.filter(':checked').length;
+            if (numChecked > 1) {
+                ModalDisplay("เลือกได้เพียง 1 รูปแบบ");
+                this.checked = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
